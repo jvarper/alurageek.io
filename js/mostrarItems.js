@@ -13,7 +13,7 @@ function crearCard(id,titulo, tecnica, imagen){
         <p class="tecnica">"${tecnica}"</p>
         <button class="eliminar" data-id="${id}">
             <div class="icono-papelera">
-                <img src="img/icons8-papelera-emoji-48.png" alt="Eliminar">
+                <img src="img/🦆 icon _trash 2_.png" alt="Eliminar">
             </div>
         </button>`;
     

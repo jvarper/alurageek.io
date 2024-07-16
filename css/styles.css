@@ -2,7 +2,7 @@
 *::before,
 *::after {
     --fondo-azul: #0f487c;
-    --contenedor-general: #121212;
+    --contenedor-general: #FFFFFF;
     --boton-enviar: #FC4100;
     --boton-limpiar: #9D9D9D;
     box-sizing: border-box;
@@ -21,13 +21,21 @@ body {
 /*Encabezado de la página (header) y pie de pagina (footer)*/
 
 .encabezado, .pie-de-pagina{
-    background-color: #5D04D9;
+    background-color: #5D04D9; /* Color de fondo */
+    background-image: url('../img/imageHeader.png'); /* Imagen de fondo */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-position: center center; /* Centrar la imagen */
+    background-size: cover; /* Ajustar la imagen para cubrir el área */
+    height: 96px;
+    width: 100%; /* Asegurar que el elemento ocupe el ancho completo */
+    padding: 20px; /* Espacio interno, ajusta según sea necesario */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
     text-align: center;
     padding: 1em 0;
     color: #000000;
     font-weight: bold;
     /*text-shadow: 0 0 10px #b36cc9, 0 0 40px #b36cc9, 0 0 80px #b36cc9;*/
-    text-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+    text-shadow: 0 0 10px rgb(32, 20, 20), 0 0 40px white, 0 0 80px white;
     & h1 {
         font-size: 40px;
     }
@@ -46,8 +54,9 @@ body {
 /* Sección de los items*/
 .seccion-items {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    padding: 60px 40px 60px 40px;
     height: 100vh;
     margin: 0;
     /*background-color: #121212;*/
@@ -60,9 +69,7 @@ body {
     justify-content: center;
     gap: 10px;
     overflow-y: auto;
-    position: relative;
-    height: 100%;
-    align-self: flex-start;
+    position: relative;        
     margin-top: 0.1em;
     
 }
@@ -70,10 +77,10 @@ body {
 .marco-fluor {
     position: relative;
     padding: 10px;
+    background-color: #5D04D9;
     /*border: 2px solid #00ff00;
     box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;*/
-    border: 2px solid #fafafa;
-    box-shadow: 0 0 10px #fafafa, 0 0 20px #fafafa, 0 0 30px #fafafa;
+    border: 2px solid #5D04D9;    
     border-radius: 10px;
     text-align: center;
     width: 250px;
@@ -131,6 +138,7 @@ body {
 .seccion-formulario {
     width: 35%;
     align-self: flex-start;
+    padding: 40px;
 }
 
 .titulo-formulario {
