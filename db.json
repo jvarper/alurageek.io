@@ -1,0 +1,40 @@
+{
+    "accesorios": [
+      {
+        "id": "1",
+        "titulo": "Control Xbox Blanco",
+        "categoria": "Controles",
+        "imagen": "../img/controlBlanco.jpg"
+      },
+      {
+        "id": "2",
+        "titulo": "Control Xbox Negro",
+        "categoria": "Controles",
+        "imagen": "../img/controlNegro.jpg"
+      },
+      {
+        "id": "3",
+        "titulo": "Control Xbox Azul",
+        "categoria": "Controles",
+        "imagen": "../img/controlAzul.jpg"
+      },
+      {
+        "id": "4",
+        "titulo": "Control Xbox Verde",
+        "categoria": "Controles",
+        "imagen": "../img/controlVerde.jpg"
+      },
+      {
+        "id": "5",
+        "titulo": "Control Xbox Camuflado",
+        "categoria": "Controles",
+        "imagen": "../img/controlCamuflado.jpg"
+      },
+      {
+        "id": "6",
+        "titulo": "Control Xbox Oro",
+        "categoria": "Controles",
+        "imagen": "../img/controlOro.jpg"
+      }
+    ]
+  }
