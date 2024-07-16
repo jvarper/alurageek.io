@@ -2,15 +2,15 @@ import { conexionApi } from "./conexionAPI.js";
 
 const lista = document.querySelector("[data-lista]"); 
 
-function crearCard(id,titulo, tecnica, imagen){
-    //creamos el marco fluor que tendrá el item, titulo y tecnica...
+function crearCard(id,titulo, categoria, imagen){
+    //creamos el marco fluor que tendrá el item, titulo y categoria...
     const card = document.createElement("div");
     card.className="marco-fluor";
 
     //Creamos la estructura dentro del div <<marcoFluor>>
     card.innerHTML=`<img src="${imagen}" alt="Imagen item" class="imagen-item">
         <p class="titulo-item">"${titulo}"</p>
-        <p class="tecnica">"${tecnica}"</p>
+        <p class="tecnica">"${categoria}"</p>
         <button class="eliminar" data-id="${id}">
             <div class="icono-papelera">
                 <img src="img/🦆 icon _trash 2_.png" alt="Eliminar">

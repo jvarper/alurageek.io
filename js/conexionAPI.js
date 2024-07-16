@@ -1,5 +1,4 @@
-async function listarItems(){
-    
+async function listarItems(){    
     const conexion= await fetch("https://my-json-server.typicode.com/jvarper/alurageek.io/accesorios");
     const conexionConvertida=conexion.json();
     return conexionConvertida;
@@ -20,7 +19,7 @@ async function enviarItem(titulo, categoria, imagen){
 
 const borrarItem = async (id) => {
     try{
-        const res= await fetch(`https://my-json-server.typicode.com/jvarper/alurageek.io/accesorios${id}`,{
+        const res= await fetch(`https://my-json-server.typicode.com/jvarper/alurageek.io/accesorios/${id}`,{
             method: "DELETE"
         });
         return await res.json();

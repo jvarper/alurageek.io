@@ -16,10 +16,10 @@ async function crearItem(evento){
     evento.preventDefault();
 
     const titulo=document.querySelector("[data-titulo]").value.trim();
-    const tecnica=document.querySelector("[data-tecnica]").value.trim();
+    const categoria=document.querySelector("[data-tecnica]").value.trim();
     const imagen=document.querySelector("[data-imagen]").value.trim();
 
-    if (!titulo || !tecnica || !imagen) {
+    if (!titulo || !categoria || !imagen) {
         alert("Por favor, completa todos los campos antes de enviar.");
         return;
     }
@@ -30,7 +30,7 @@ async function crearItem(evento){
     }
 
     try {
-        await conexionApi.enviarItem(titulo,tecnica,imagen);
+        await conexionApi.enviarItem(titulo,categoria,imagen);
         //hasta aquí se envía los datos del nuevo item
         
         // Limpiar el formulario después del envío exitoso
